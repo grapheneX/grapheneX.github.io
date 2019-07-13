@@ -1,7 +1,8 @@
-body {
+body, html {
     margin: 0;
-    background-color: #1E1E1E;
     color: white;
+    background-color: #1E1E1E;
+    height: 100%
 }
 
 .overlay {
@@ -18,6 +19,44 @@ body {
     animation: spin 2s linear infinite;
 }
 
+.deep-like {
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.consolas {
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.vertical {
+    border: none;
+    border-left: 1px solid white;
+    height: 350px;
+    width: 1px;
+    margin: 0px;
+}
+
+
+.ghico {
+    color: #CCCCCC;
+}
+
+.ghico:hover {
+    background-color: #24292E;
+    color: white;
+}
+
+.twico {
+    color: #1DA1F2;
+}
+
+.twico:hover {
+    color: #1E1E1E;
+    background-color: #1DA1F2;
+}
+
 @keyframes spin {
     0% {
         -webkit-transform: rotateY(0);
@@ -25,7 +64,16 @@ body {
     50% {
         -webkit-transform: rotateY(0.5turn);
     }
-    100%{
+    100% {
         -webkit-transform: rotateY(1turn);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vertical {
+        display: none;
+    }
+    .consolas {
+        font-size: inherit
     }
 }
