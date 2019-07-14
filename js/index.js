@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(".overlay").fadeOut("slow");
         // Initialize the AOS library.
         AOS.init({
-            duration: 100
+            duration: 500
         });
     }, 500);
 })
