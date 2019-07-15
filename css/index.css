@@ -20,32 +20,27 @@ body, html {
 }
 
 .deep-like {
-    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 2px 0px #CCCCCC60;
+    -moz-box-shadow: 0px 0px 2px 0px #CCCCCC60;
+    box-shadow: 0px 0px 2px 0px #CCCCCC60;
 }
-
-.consolas {
-    font-family: monospace;
-    font-size: 24px;
-}
-
-.vertical {
-    border: none;
-    border-left: 1px solid white;
-    height: 350px;
-    width: 1px;
-    margin: 0px;
-}
-
 
 .ghico {
-    color: #CCCCCC;
+    color: #f5f5f5;
 }
 
 .ghico:hover {
-    background-color: #24292E;
-    color: white;
+    background-color: white;
+    color: #1E1E1E;
+}
+
+.pyico {
+    color: #FFE873;
+}
+
+.pyico:hover {
+    background-color: #FFD43B;
+    color: #1E1E1E;
 }
 
 .twico {
