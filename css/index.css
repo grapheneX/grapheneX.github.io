@@ -26,12 +26,21 @@ body, html {
 }
 
 .ghico {
-    color: #CCCCCC;
+    color: #f5f5f5;
 }
 
 .ghico:hover {
-    background-color: #24292E;
-    color: white;
+    background-color: white;
+    color: #1E1E1E;
+}
+
+.pyico {
+    color: #FFE873;
+}
+
+.pyico:hover {
+    background-color: #FFD43B;
+    color: #1E1E1E;
 }
 
 .twico {
