@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     color: white;
     background-color: #1E1E1E;
-    height: 100%
 }
 
 .overlay {
@@ -64,11 +63,15 @@ body, html {
     }
 }
 
+
 @media only screen and (max-width: 768px) {
     .vertical {
         display: none;
     }
     .consolas {
         font-size: inherit
+    }
+    .content {
+        margin-top: 8rem !important;
     }
 }
