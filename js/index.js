@@ -1,4 +1,6 @@
 var animDuration = 500;
+var releaseDate = "Jul 23, 2019 00:00:00";
+var countDownDate;
 $(document).ready(function() {
     // Remove the spinning animation after 500ms.
     setTimeout(function() {
@@ -8,34 +10,26 @@ $(document).ready(function() {
             duration: animDuration
         });
     }, animDuration);
-
-    // Timer
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jul 23, 2019 00:00:00").getTime();
-
-    // Update the count down every 1 second
+    // Set the date we're counting down to.
+    countDownDate = new Date(releaseDate).getTime();
+    // Update the count down every 1 second.
     var x = setInterval(function() {
-
-    // Get today's date and time
+    // Get today's date and time.
     var now = new Date().getTime();
-        
-    // Find the distance between now and the count down date
+    // Find the distance between now and the count down date.
     var distance = countDownDate - now;
-        
-    // Time calculations for days, hours, minutes and seconds
+    // Time calculations for days, hours, minutes and seconds.
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
     // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-        
-    // If the count down is over, write some text 
+    $("#countdown").html(days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ");
+    // Count down is over.
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "Released !";
+        $("#countdown").html("");
     }
     }, 1000);
 })
