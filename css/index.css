@@ -20,9 +20,9 @@ body, html {
 }
 
 .deep-like {
-    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 2px 0px #CCCCCC80;
+    -moz-box-shadow: 0px 0px 2px 0px #CCCCCC80;
+    box-shadow: 0px 0px 2px 0px #CCCCCC80;
 }
 
 .ghico {
